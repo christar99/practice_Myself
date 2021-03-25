@@ -1,0 +1,135 @@
+@charset "UTF-8";
+html{
+	width: 100%; height: 100%;
+	background-color: black;
+	overflow: hidden;
+}
+
+body{
+	width: 100%; height: 100%;
+	color: white;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.bgImage{
+	position: absolute;
+	width: 100%; height: 100%;
+	top: 0; left: 0;
+	z-index: -1;
+	animation: fadeIn 1s linear;
+}
+
+.js-weather{
+	float: right;
+	right: 2em;
+	top: 2.5em;
+	font-size: 12px;
+	font-style: italic;
+	position: absolute;
+}
+
+#wrap{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.js-clock{
+	font-size: 10em;
+	margin: 0;
+}
+
+
+
+@keyframes fadeIn{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+
+.js-form>input[type=text]{
+	font-size: 36px;
+}
+
+.todo-form>input[type=text]{
+	font-size: 24px;
+}
+
+input[type=text]::placeholder{
+	color: #d0d0d0;
+}
+
+input[type=text]{
+	color: white;
+	background: transparent;
+	border: none;
+	border-bottom: 3px solid #d0d0d0;
+	caret-color: white;
+}
+
+input[type=text]:focus{
+	outline: none;
+}
+
+.js-form, .js-greetings{
+	display: none;
+	margin-bottom: 18px;
+}
+
+.js-greetings{
+	font-size: 3em;
+}
+
+.showing{
+	display: block;
+}
+
+.todo-form{
+	margin-bottom: 24px;
+}
+
+#delBtn{
+	cursor: pointer;
+}
+
+.todoList{
+	list-style: none;
+	padding: 0;
+}
+
+
+.todoList>li{
+	font-size: 24px;
+	padding-top: 0.2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
